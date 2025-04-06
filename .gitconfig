@@ -1,0 +1,44 @@
+[core]
+    editor = code --wait
+    autocrlf = true
+    filemode = false
+    ignorecase = true
+
+[user]
+    name = Steven Groves
+    email = MtDewWolf123233@gmail.com
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[push]
+    default = current
+
+[color]
+    ui = true
+
+[help]
+    autocorrect = 1
+
+[init]
+    defaultBranch = Master
+
+[merge]
+    tool = vscode
+    conflictstyle = diff3
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+    trustExitCode = true
+
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE 

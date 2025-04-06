@@ -1,0 +1,83 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.game-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.leaderboard-table th {
+    background-color: #f8f9fa;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.game-cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-cell:hover {
+    background-color: #f8f9fa;
+}
+
+.pong-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    margin: 20px auto;
+}
+
+.paddle {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+} 
